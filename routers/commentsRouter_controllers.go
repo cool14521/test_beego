@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["finance_report/controllers:ObjectController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ObjectController"],
+	beego.GlobalControllerRouter["finance_report/controllers:ReportController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ReportController"],
 		beego.ControllerComments{
 			Method: "Post",
 			Router: `/`,
@@ -15,7 +15,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["finance_report/controllers:ObjectController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ObjectController"],
+	beego.GlobalControllerRouter["finance_report/controllers:ReportController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ReportController"],
 		beego.ControllerComments{
 			Method: "GetAll",
 			Router: `/`,
@@ -23,15 +23,15 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["finance_report/controllers:ObjectController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ObjectController"],
+	beego.GlobalControllerRouter["finance_report/controllers:ReportController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ReportController"],
 		beego.ControllerComments{
 			Method: "Get",
-			Router: `/:objectId`,
+			Router: `/:objectID`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["finance_report/controllers:ObjectController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ObjectController"],
+	beego.GlobalControllerRouter["finance_report/controllers:ReportController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ReportController"],
 		beego.ControllerComments{
 			Method: "Put",
 			Router: `/:objectId`,
@@ -39,7 +39,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["finance_report/controllers:ObjectController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ObjectController"],
+	beego.GlobalControllerRouter["finance_report/controllers:ReportController"] = append(beego.GlobalControllerRouter["finance_report/controllers:ReportController"],
 		beego.ControllerComments{
 			Method: "Delete",
 			Router: `/:objectId`,
