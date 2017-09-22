@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "finance_report/routers"
+	_ "test_beego/routers"
 
 	"github.com/astaxie/beego"
 )

@@ -5,7 +5,7 @@
 package routers
 
 import (
-	"finance_report/controllers"
+	"test_beego/controllers"
 
 	"github.com/astaxie/beego"
 )

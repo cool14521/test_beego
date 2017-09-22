@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"finance_report/models"
+	"test_beego/models"
 	"encoding/json"
 
 	"github.com/astaxie/beego"

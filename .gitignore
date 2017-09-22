@@ -1,2 +1,5 @@
 *.exe
 /*.exe~
+/desktop.ini
+/lastupdate.tmp
+/.vscode
