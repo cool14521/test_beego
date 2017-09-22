@@ -11,6 +11,8 @@ import (
 )
 
 func init() {
+	beego.Router("/", &controllers.MainController{})
+	
 	ns := beego.NewNamespace("/v1",
 		//通用报表
 		beego.NSNamespace("/object",
@@ -28,4 +30,6 @@ func init() {
 		//用户认证 auth
 	)
 	beego.AddNamespace(ns)
+//404 DIY
+   beego.ErrorController(&controllers.ErrorController{})
 }
